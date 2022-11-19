@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:social_media/screens/auth/sing_up.dart';
 
+import '../home/home.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -78,7 +80,7 @@ class LoginScreen extends StatelessWidget {
                   CupertinoButton(
                     onPressed: () {
                       //todo: login btn
-                      Get.to(()=>SingUpScreen());
+                      Get.to(()=>HomeScreen());
                     },
                     padding: EdgeInsets.zero,
                     child: Container(
@@ -179,7 +181,9 @@ class LoginScreen extends StatelessWidget {
                         style: TextStyle(fontSize: 15),
                       ),
                       CupertinoButton(
-                        onPressed: (){},
+                        onPressed: (){
+                          Get.to(()=>SingUpScreen());
+                        },
                           padding: EdgeInsets.zero,
                           child: Text(
                         "Register",

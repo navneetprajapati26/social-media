@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:social_media/screens/auth/login.dart';
 import 'package:social_media/screens/auth/sing_up.dart';
+import 'package:social_media/screens/home/home.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -24,8 +25,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(),
-      //home: SingUpScreen(),
+      //home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }
