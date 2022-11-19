@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:social_media/screens/auth/sing_up.dart';
 
 import '../home/home.dart';
+import 'forgot_password.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -22,7 +23,9 @@ class LoginScreen extends StatelessWidget {
           children: [
             Container(
               height: height / 3,
+              width: width,
               color: Colors.orange,
+              child: Image.asset("assets/login.png"),
             ),
             Container(
               height: 2 * height / 3,
@@ -67,6 +70,7 @@ class LoginScreen extends StatelessWidget {
                       CupertinoButton(
                           onPressed: () {
                             //todo:Forgot btn
+                            Get.to(()=>ForgotPassScreen());
                           },
                           padding: EdgeInsets.only(
                             top: 4,
